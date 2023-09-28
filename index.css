@@ -1,0 +1,110 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+
+#app{
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titleName{
+    margin: 3rem;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.blockGroup{
+    margin: .2rem;
+    width: 30%;
+    height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .375rem;
+    overflow: hidden;
+}
+.blockGroup:hover .mask{
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.blockGroup:hover > span{
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #543802 25%, #362400 0, #362400 50%, #543802 0, #543802 75%, #362400 0);
+    background-size:30px 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: default;
+    font-weight: 900;
+    font-size: 2rem;
+    color: transparent;
+    text-shadow: #ffffffa8 0px -1px 0px;
+    letter-spacing: .5rem;
+
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    z-index: 999;
+}
+
+.blockGroup > span{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    opacity: 1;
+    position: relative;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    border: 5px solid #543802;
+    border-radius: .5rem;
+}

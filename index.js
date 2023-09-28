@@ -1,0 +1,81 @@
+let textArray =[
+    {
+        num:"一",
+        name:"9x9乘法表",
+        url:"/1F/multiplicationTable.html"
+    },{
+        num:"二",
+        name:"時鐘",
+        url:""
+    },{
+        num:"三",
+        name:"計算機",
+        url:""
+    },{
+        num:"四",
+        name:"時區",
+        url:""
+    },{
+        num:"五",
+        name:"全台空氣指標儀板表",
+        url:""
+    },{
+        num:"六",
+        name:"60秒算術遊戲",
+        url:""
+    },{
+        num:"七",
+        name:"Canvas畫板",
+        url:""
+    },{
+        num:"八",
+        name:"井字遊戲",
+        url:""
+    },{
+        num:"九",
+        name:"抽獎轉盤",
+        url:""
+    },{
+        num:"十",
+        name:"Chrome應用程式(幹話產生器)",
+        url:""
+    },{
+        num:"十一",
+        name:"燈箱效果",
+        url:""
+    },{
+        num:"十二",
+        name:"拼圖",
+        url:""
+    },{
+        num:"十三",
+        name:"貪吃蛇",
+        url:""
+    },{
+        num:"十四",
+        name:"求籤",
+        url:""
+    },{
+        num:"十五",
+        name:"死亡筆記本",
+        url:""
+    }
+];
+
+const app = {
+    data(){
+        return{
+            textArray:[]
+        }
+    },
+    methods: {
+        transmitURL(src){
+            location.href = src;
+        }
+    },
+    created() {
+        this.textArray = textArray;
+    }
+  };
+  
+  Vue.createApp(app).mount("#app");
