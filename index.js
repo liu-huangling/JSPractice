@@ -6,7 +6,7 @@ let textArray =[
     },{
         num:"二",
         name:"時鐘",
-        url:""
+        url:"/2F/Clock.html"
     },{
         num:"三",
         name:"計算機",

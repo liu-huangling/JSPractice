@@ -1,0 +1,39 @@
+html,body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+.app
+  width: 100%
+  height: 100%
+  background-color: #293B29
+  display: flex
+  justify-content: center
+  align-items: center
+  .circle
+    width: 400px
+    height: 400px
+    
+    img#hour
+      position: absolute
+      top: 49%
+      left: 50%
+      z-index: 3
+      transform-origin: left
+      transform: rotate(0deg)
+    img#min
+      position: absolute
+      top: 38%
+      left: 50%
+      z-index: 2
+      transform-origin: bottom
+      transform: rotate(0deg)
+    img#sec
+      position: absolute
+      top: 50%
+      left: 49%
+      z-index: 1
+      transform-origin: top
+      transform: rotate(0deg)
+      
+    
