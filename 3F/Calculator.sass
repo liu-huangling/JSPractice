@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900')
+$colorBlue : #062145
+$colorHighBlue : #00C4FF
+$colorDarkBlue : #041936
+@mixin flexCenter
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: start
+@mixin fontsize
+  text-align: center
+  font-size: 28px
+  line-height: 52px
+  margin-top: 5px
+  cursor: pointer
+  &:hover
+    opacity: 0.5
+  
+html,body
+  background-color: #E8E8E8
+  margin: 0 
+  padding: 0
+  font-family: "Roboto",sans-serif
+#app
+  width: 350px
+  height: auto
+  background-color: $colorBlue
+  color: white
+  margin: 20px
+  padding: 24px
+  border-radius: 25px
+  position: absolute
+  top:50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  +flexCenter
+  .box-Light
+  .boxSum
+    width: 100%
+    background-color: $colorDarkBlue
+    border-radius: 25px
+    padding: 10px
+    p
+      text-align: right
+      font-size: 26px
+      line-height: 48px
+      margin: 0
+      padding: 0
+      cursor: default
+    p.s
+      font-size: 14px
+      line-height: 22px
+      color: $colorHighBlue
+      letter-spacing: .1rem
+      word-wrap: break-word
+  .box-left
+    width: 80%
+    +flexCenter
+    justify-content: space-between
+    .box-left-num
+      width: 30%
+      +fontsize
+  .box-right
+    width: 20%
+    .box-action
+      +fontsize
+      background: $colorDarkBlue 0% 0% no-repeat padding-box
+      border-radius: 16px
+  .box-bottom
+    width: 100%
+    +flexCenter
+    justify-content: space-between
+    margin-top:10px
+    .box-b
+      width: 22%
+      +fontsize
+      border-radius: 50%
+      line-height: 75px
+      color: $colorHighBlue
+    .box-result
+      width: 45%
+      +fontsize
+      line-height: 75px
+      border-radius: 16px
+      background:  transparent linear-gradient(90deg, #00C4FF 0%, #6C00FF 100%) 0% 0% no-repeat padding-box

@@ -1,5 +1,5 @@
 $(function(){
-    $(".circle").css('background','rgba(0,0,0,0) url(https://imgur.com/g4G98N1.png) 0% 0% no-repeat');
+    $(".circle").css('background','rgba(0,0,0,0) url(../2F/img/g4G98N1.png) 0% 0% no-repeat');
     $(".circle").css('background-position',' center center');
 });
 

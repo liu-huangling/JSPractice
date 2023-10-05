@@ -10,7 +10,7 @@ let textArray =[
     },{
         num:"三",
         name:"計算機",
-        url:""
+        url:"/3F/Calculator.html"
     },{
         num:"四",
         name:"時區",
@@ -70,7 +70,7 @@ const app = {
     },
     methods: {
         transmitURL(src){
-            location.href = src;
+            window.open(src);
         }
     },
     created() {
