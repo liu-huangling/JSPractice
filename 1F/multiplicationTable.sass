@@ -3,22 +3,20 @@ html,body
   margin: 25px
   padding: 0
   font-style: "微軟正黑體"
-
+  
 .box-container
   display: flex
   flex-wrap: wrap
   justify-content: center
   width: 100%
   padding: 25px
-  
   .box
     margin: 15px
     height: 350px
     overflow: hidden
   .box-head
     width: 30%
-    border-top: 1px solid #2EB738
-    border-bottom: 1px solid #2EB738
+    font-weight: 700
     .box-center
       height: 80%
       width: 100%
@@ -26,10 +24,14 @@ html,body
       top: 55%
       left: 40%
       transform: translate(-40%, -45%)
+      display: flex
+      flex-direction: column
+      align-items: stretch
       h1,h4
         color:#2EB738
         margin: 0 auto
         text-align: justify
+        font-weight: 700
       h1
         font-size: 66px
       h4
@@ -38,12 +40,17 @@ html,body
       height: 10%
       width: 100%
       display: flex
+      align-items: center
       justify-content: space-between
       span
         font-size: 24px 
         color: #2EB738
+      hr
+        width: 80%
+        border: 1px solid #2eb738
   .box-content
     width: 30%
+    height: auto
     background-color: #FFFFFF
     box-shadow: 0px 3px 10px #D8D8D8
     border-radius: 100px 0px 30px 0px
@@ -52,15 +59,16 @@ html,body
       display: flex
       flex-wrap: wrap
       flex-direction: column
-      justify-content: space-evenly
+      justify-content: flex-start
       align-content: center
-      margin: 25px 0 25px 0 
+      margin: 1.5rem 0 
       h1
         font-size: 128px
         color: #2EB738
         letter-spacing: 0
         text-shadow: 4px 3px 0px #F0F0F0
         margin: 0 auto
+        font-weight: 700
       li
         list-style-type: none
         font-weight: 500
@@ -69,4 +77,4 @@ html,body
           font-size: 30px 
           line-height:48px
           letter-spacing: 0
-          margin-left: 12px
+          margin: 0 1rem
