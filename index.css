@@ -9,8 +9,10 @@ a{
 }
 
 #app{
-    background-color: #eeeeee;
-    height: 100%;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/abbe87ea-79ce-45cd-99ba-3a975914627a/dapnye7-b5e649e7-e07b-4155-b8dc-95c006597826.jpg/v1/fill/w_1024,h_531,q_75,strp/backgrounds_ending_dragonball_z__facudibuja_by_facudibuja-dapnye7.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9hYmJlODdlYS03OWNlLTQ1Y2QtOTliYS0zYTk3NTkxNDYyN2EvZGFwbnllNy1iNWU2NDllNy1lMDdiLTQxNTUtYjhkYy05NWMwMDY1OTc4MjYuanBnIiwid2lkdGgiOiI8PTEwMjQiLCJoZWlnaHQiOiI8PTUzMSJ9XV19.j8V5JcUL7zYPyuNOxtSbSYQtCnxYO80QdbUZ5fqpG6s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
 }
 .container{
@@ -18,12 +20,19 @@ a{
     flex-wrap: wrap;
 }
 .titleName{
-    margin: 3rem;
+    margin: 1rem;
+    margin-top: 19rem;
     width: 100%;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     letter-spacing: .2rem;
+    cursor: pointer;
+    color: #ffeac3;
+    text-shadow: 1px 1px 2px #333;
+}
+.titleName:hover{
+    scale: 1.05;
 }
 .main{
     width: 100%;
@@ -34,7 +43,7 @@ a{
 .blockGroup{
     margin: .2rem;
     width: 30%;
-    height: 280px;
+    height: 100px;
     position: relative;
     display: flex;
     align-items: center;
@@ -54,13 +63,14 @@ a{
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
+
 .mask{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #543802 25%, #362400 0, #362400 50%, #543802 0, #543802 75%, #362400 0);
+    background: linear-gradient(45deg, #b08b41 25%, #dfaa48 0,#dfaa48 50%, #b08b41 0, #dca83f 75%, #b08b41 0);
     background-size:30px 30px;
     
     display: flex;
@@ -71,7 +81,7 @@ a{
     font-weight: 900;
     font-size: 2rem;
     color: transparent;
-    text-shadow: #ffffffa8 0px -1px 0px;
+    text-shadow: #ffffff 0px -1px 0px;
     letter-spacing: .5rem;
 
     backface-visibility: hidden;
@@ -99,12 +109,18 @@ a{
     justify-content: center;
     cursor: pointer;
 
+    color: #ffeac3;
+    text-shadow: 1px 1px 2px #333;
+
     opacity: 1;
     position: relative;
     -moz-transition: all 0.8s;
     -ms-transition: all 0.8s;
     -webkit-transition: all 0.8s;
     transition: all 0.8s;
-    border: 5px solid #543802;
+    border: 5px solid #dfaa48;
     border-radius: .5rem;
+}
+.blockGroup > span.default{
+    cursor: not-allowed;
 }

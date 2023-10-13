@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>首頁</title>
+    <title>TimeZone</title>
     <!-- b5 -->
     <link
       rel="stylesheet"
@@ -18,20 +17,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="../Fuder/assets/css/TimeZone.css"></link>
+    <link rel="stylesheet" href="../Fuder/assets/css/TimeZone.css.map"></link>
   </head>
   <body>
-    <div id="app">
-      <div class="container">
-        <h2 class="titleName" @click="link()">JS地下城</h2>
-        <div class="main">
-            <div class="blockGroup" v-for = "item in textArray">
-                <div class="mask">
-                    第{{item.num}}關
-                </div>
-                <span v-if="item.url==''" class="default">尚未開放</span>
-                <span v-else @click="transmitURL(item.url)">{{item.name}}</span>
-            </div>
+    <div class="box">
+      <div class="title">WORLD CLOCK</div>
+      <div class="contentGroup">
+        <div v-for="(item,id) in countryArray" class="contentBox">
+          <div class="textGroup">
+            <h2>{{ item.location }}</h2>
+            <span
+              >{{ item.time.day }} {{ item.time.month }}.{{ item.time.year }}
+            </span>
+          </div>
+          <div class="times">{{ item.time.hours }}:{{ item.time.min }}</div>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"
     ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js"></script>
-    <script src="/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script>
+    <script src="/4F/TimeZone.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@ let textArray =[
     },{
         num:"四",
         name:"時區",
-        url:""
+        url:"/4F/TimeZone.html"
     },{
         num:"五",
         name:"全台空氣指標儀板表",
@@ -71,6 +71,9 @@ const app = {
     methods: {
         transmitURL(src){
             window.open(src);
+        },
+        link(){
+            window.open("https://medium.com/@LindaLiu0821");
         }
     },
     created() {
