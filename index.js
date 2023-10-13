@@ -2,19 +2,19 @@ let textArray =[
     {
         num:"一",
         name:"9x9乘法表",
-        url:"/1F/multiplicationTable.html"
+        url:"/JSPractice/1F/multiplicationTable.html"
     },{
         num:"二",
         name:"時鐘",
-        url:"/2F/Clock.html"
+        url:"/JSPractice/2F/Clock.html"
     },{
         num:"三",
         name:"計算機",
-        url:"/3F/Calculator.html"
+        url:"/JSPractice/3F/Calculator.html"
     },{
         num:"四",
         name:"時區",
-        url:"/4F/TimeZone.html"
+        url:"/JSPractice/4F/TimeZone.html"
     },{
         num:"五",
         name:"全台空氣指標儀板表",
