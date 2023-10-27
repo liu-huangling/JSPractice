@@ -26,7 +26,7 @@ let textArray =[
     },{
         num:"七",
         name:"Canvas畫板",
-        url:""
+        url:"/JSPractice/7F/Paint.html"
     },{
         num:"八",
         name:"井字遊戲",
