@@ -22,7 +22,7 @@ let textArray =[
     },{
         num:"六",
         name:"60秒算術遊戲",
-        url:""
+        url:"/JSPractice/6F/60SecondsChallenge.html"
     },{
         num:"七",
         name:"Canvas畫板",

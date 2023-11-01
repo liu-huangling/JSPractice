@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900');
+
+$colorYellow: #FF9D00;
+$colorWhite: #fff;
+$colorBlack: #000;
+
+@mixin flexGroup($jcc,$acc){
+  display: flex;
+  justify-content: $jcc;
+  align-items: $acc;
+  align-content: $acc;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: Roboto Condensed;
+  .box{
+    width: 100%;
+    height: 100vh;
+    background-color: $colorYellow;
+    .page1{
+      width: 100%;
+      height: 100vh;
+      @include flexGroup(center,center);
+      flex-direction:column;
+      .page1Box{
+        width: 700px; 
+        @include flexGroup(center,center);
+      }
+      .topText{
+        flex-direction:row;
+        height: 200px;
+        padding-bottom:4rem;
+        h1{
+          line-height:200px;
+          font-size:200px;
+          text-shadow: 12px 0 0 $colorBlack;
+          color: $colorWhite;
+          padding: 0 1.5rem;
+          margin: 0;
+        }
+        div{
+          margin: 0;
+          padding: 0;
+          @include flexGroup(flex-start,flex-start);
+          flex-direction: column;
+          p{
+            @include flexGroup(flex-start,flex-start);
+            width: 450px;
+            padding: 0;
+            margin: 0;
+            font-size:70px;
+            font-weight: 900;
+            span{
+              line-height:40px;
+              font-size:40px;
+              color:$colorWhite;
+              border: 0px;
+              border-bottom: 15px solid $colorWhite;
+              border-style: double;
+              margin-top: 20px;
+              padding: 0;
+              margin-left: .35rem;
+            }
+          }
+        }
+      }
+      .bottomText{
+        flex-direction:column;
+        padding-top: 4rem;
+        button{
+          width: 350px;
+          height: 58px;
+          border-radius: 0;
+          border:0px;
+          background-color: $colorBlack;
+          color: $colorYellow;
+          font-size:36px;
+          font-weight: 700;
+        }
+        span{
+          font: italic normal normal 24px/28px Roboto Condensed;
+          color:$colorWhite;
+        }
+      }
+    }
+    .page2{
+      width: 100%;
+      height: 100vh;
+      @include flexGroup(center,center);
+      flex-direction:column;
+      display: none;
+      .page2Box{
+        width: 750px;
+        @include flexGroup(space-between,center);
+      }
+      .top2Text{
+        padding-bottom: 3rem;
+        .left{
+          width: 310px;
+          white-space:nowrap;
+          @include flexGroup(flex-start,flex-start);
+          flex-direction: column;
+        }
+        .right{
+          width: 260px;
+          @include flexGroup(center,center);
+          font-size: 96px;
+          font-style: italic;
+          color: $colorWhite;
+          font-weight: 700;
+        }
+        div{
+          p{
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+            color: $colorWhite;
+            &:first-child{
+              border: 4px solid $colorWhite;
+              font-weight: 500;
+              padding: .25rem;
+            }
+            &:last-child{
+              color: $colorBlack;
+              font-weight: 700;
+              font-size:40px;
+              line-height: 40px;
+              &:before{
+                content:'SCORE';
+                font-size: 30px;
+                line-height:40px;
+                padding: .45rem;
+                margin-right: .35rem;
+                background-color: $colorWhite;
+              }
+            }
+          }
+        }
+      }
+      .bottom2Text{
+        padding-top: 3rem;
+        
+        h1{
+          font-size: 112px;
+          font-weight: 700;
+        }
+        h2{
+          font-size: 102px;
+          color: $colorWhite;
+        }
+        .numberGroup{
+          @include flexGroup(center,center);
+          flex-direction: column;
+          input{
+            width: 255px;
+            height: 130px;
+            border:0px;
+            border-radius: 0;
+            padding: 0 1rem;
+            margin: 0;
+            font-size:90px;
+            text-align: center;
+          }
+          input[type=number]::-webkit-outer-spin-button,
+          input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          span{
+            font-style: italic;
+            color: $colorWhite;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .page3{
+      width: 100%;
+      height: 100vh;
+      @include flexGroup(center,center);
+      flex-direction: column;
+      display: none;
+      .top3Text{
+        padding-bottom: 3rem;
+        @include flexGroup(center,center);
+        flex-direction: column;
+        .final1{
+          color: $colorWhite;
+          border: 4px solid $colorWhite;
+          padding: .5rem;
+          font-size: 30px;
+          font-weight: 700;
+        }
+        .final2{
+          font-size: 56px;
+          font-weight: 700;
+          &:before,&:after{
+            content:"—";
+            padding: 0 .5rem;
+            color: $colorWhite;
+          }
+        }
+        .final3{
+          font-size: 112px;
+          font-weight: 900;
+        }
+        .filal4{
+          font-size: 20px;
+          font-weight: 900;
+        }
+      }
+      button{
+        border-radius: 0;
+        width: 350px;
+        height: 58px;
+        border:0px;
+        background-color: $colorBlack;
+        color: $colorYellow;
+        font-weight: 700;
+        font-size: 36px;
+      }
+    }
+  }
+}
