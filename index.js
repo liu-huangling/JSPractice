@@ -30,7 +30,7 @@ let textArray =[
     },{
         num:"八",
         name:"井字遊戲",
-        url:""
+        url:"/JSPractice/8F/Game.html"
     },{
         num:"九",
         name:"抽獎轉盤",

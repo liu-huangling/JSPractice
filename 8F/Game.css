@@ -1,0 +1,1309 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Roboto Condensed;
+}
+html .box .page1,
+body .box .page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+html .box .page1 .pageGroup,
+body .box .page1 .pageGroup {
+  width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup,
+body .box .page1 .pageGroup {
+    width: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup,
+body .box .page1 .pageGroup {
+    width: 350px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup,
+body .box .page1 .pageGroup {
+    width: 300px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup,
+body .box .page1 .pageGroup .contentGroup {
+  width: 540px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup,
+body .box .page1 .pageGroup .contentGroup {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup,
+body .box .page1 .pageGroup .contentGroup {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup,
+body .box .page1 .pageGroup .contentGroup {
+    width: 300px;
+    height: 300px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content,
+body .box .page1 .pageGroup .contentGroup .content {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content,
+body .box .page1 .pageGroup .contentGroup .content {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content,
+body .box .page1 .pageGroup .contentGroup .content {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content,
+body .box .page1 .pageGroup .contentGroup .content {
+    width: 100px;
+    height: 100px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content h2,
+body .box .page1 .pageGroup .contentGroup .content h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 76px;
+  margin: 0;
+  padding: 0;
+  line-height: 90px;
+  cursor: default;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content h2,
+body .box .page1 .pageGroup .contentGroup .content h2 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content h2,
+body .box .page1 .pageGroup .contentGroup .content h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content h2,
+body .box .page1 .pageGroup .contentGroup .content h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .solidCircle,
+body .box .page1 .pageGroup .contentGroup .content .solidCircle {
+  width: 90px;
+  height: 90px;
+  border: 10px solid #ed494c;
+  border-radius: 50%;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCircle,
+body .box .page1 .pageGroup .contentGroup .content .solidCircle {
+    width: 75px;
+    height: 75px;
+    border: 9px solid #ed494c;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCircle,
+body .box .page1 .pageGroup .contentGroup .content .solidCircle {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ed494c;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCircle,
+body .box .page1 .pageGroup .contentGroup .content .solidCircle {
+    width: 50px;
+    height: 50px;
+    border: 7px solid #ed494c;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .borderCircle,
+body .box .page1 .pageGroup .contentGroup .content .borderCircle {
+  width: 90px;
+  height: 90px;
+  border: 18px double #ff6d70;
+  border-radius: 50%;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCircle,
+body .box .page1 .pageGroup .contentGroup .content .borderCircle {
+    width: 75px;
+    height: 75px;
+    border: 9px solid #ff6d70;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCircle,
+body .box .page1 .pageGroup .contentGroup .content .borderCircle {
+    width: 60px;
+    height: 60px;
+    border: 8px solid #ff6d70;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCircle,
+body .box .page1 .pageGroup .contentGroup .content .borderCircle {
+    width: 50px;
+    height: 50px;
+    border: 7px solid #ff6d70;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .borderCross,
+body .box .page1 .pageGroup .contentGroup .content .borderCross {
+  color: #000;
+  position: relative;
+}
+html .box .page1 .pageGroup .contentGroup .content .borderCross:before, html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  background-color: #000;
+  border: 4px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 2px 0 #fff;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before, html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    width: 75px;
+    height: 15px;
+    border: 3px solid #fff;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before, html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    width: 60px;
+    height: 10px;
+    border: 2px solid #fff;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before, html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    width: 50px;
+    height: 5px;
+    border: 1px solid #fff;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -45px;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before {
+    left: -37.5px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:before,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:before {
+    left: -25px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: -45px;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    left: -37.5px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .borderCross:after,
+body .box .page1 .pageGroup .contentGroup .content .borderCross:after {
+    left: -25px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .solidCross,
+body .box .page1 .pageGroup .contentGroup .content .solidCross {
+  color: #ed494c;
+  position: relative;
+}
+html .box .page1 .pageGroup .contentGroup .content .solidCross:before, html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 10px;
+  background-color: #ed494c;
+  border-radius: 15px;
+  box-shadow: 0 0 2px 0 #ed494c;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before, html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    width: 75px;
+    height: 15px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before, html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    width: 60px;
+    height: 10px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before, html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    width: 50px;
+    height: 5px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -45px;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before {
+    left: -37.5px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:before,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:before {
+    left: -25px;
+  }
+}
+html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: -45px;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    left: -37.5px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .contentGroup .content .solidCross:after,
+body .box .page1 .pageGroup .contentGroup .content .solidCross:after {
+    left: -25px;
+  }
+}
+html .box .page1 .pageGroup .startBtn,
+body .box .page1 .pageGroup .startBtn {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ff6d70;
+  border-radius: 8px;
+}
+@media all and (max-width: 414px) {
+  html .box .page1 .pageGroup .startBtn,
+body .box .page1 .pageGroup .startBtn {
+    font-size: 32px;
+    height: 60px;
+    width: 90%;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page1 .pageGroup .startBtn,
+body .box .page1 .pageGroup .startBtn {
+    font-size: 28px;
+    height: 50px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page1 .pageGroup .startBtn,
+body .box .page1 .pageGroup .startBtn {
+    font-size: 26px;
+    height: 55px;
+  }
+}
+html .box .page2,
+body .box .page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff6d70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: none;
+}
+html .box .page2 .pageGroup2,
+body .box .page2 .pageGroup2 {
+  width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  /*----- 遊戲畫面 -----*/
+  /*----- 遊戲結果 -----*/
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2,
+body .box .page2 .pageGroup2 {
+    width: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2,
+body .box .page2 .pageGroup2 {
+    width: 350px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2,
+body .box .page2 .pageGroup2 {
+    width: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup,
+body .box .page2 .pageGroup2 .scoreGroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: row;
+}
+html .box .page2 .pageGroup2 .scoreGroup .center,
+body .box .page2 .pageGroup2 .scoreGroup .center {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 0.95rem;
+  border: 2px solid #000;
+  border-bottom: 0px;
+  border-radius: 8px 8px 0px 0px;
+  font-size: 20px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .center,
+body .box .page2 .pageGroup2 .scoreGroup .center {
+    font-size: 16px;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup .scoreDiv,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv {
+  border: 4px solid #000;
+  width: 50%;
+  background-color: #fff;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  position: relative;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .scoreDiv,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv {
+    height: 40px;
+    border: 2px solid #000;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup .scoreDiv p,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv p {
+  width: 85%;
+  margin: 0;
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .scoreDiv p,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv p {
+    line-height: 32px;
+    font-size: 24px;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup .scoreDiv .circleTips,
+html .box .page2 .pageGroup2 .scoreGroup .scoreDiv .crossTips,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv .circleTips,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv .crossTips {
+  width: 16%;
+  color: #fff;
+  background-color: #000;
+  font-size: 28px;
+  text-align: center;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .scoreDiv .circleTips,
+html .box .page2 .pageGroup2 .scoreGroup .scoreDiv .crossTips,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv .circleTips,
+body .box .page2 .pageGroup2 .scoreGroup .scoreDiv .crossTips {
+    font-size: 24px;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup .crossScore,
+body .box .page2 .pageGroup2 .scoreGroup .crossScore {
+  border-radius: 8px 0px 0px 8px;
+  border-right: 0px;
+}
+html .box .page2 .pageGroup2 .scoreGroup .crossScore .tips,
+body .box .page2 .pageGroup2 .scoreGroup .crossScore .tips {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  left: 0;
+  color: #fff;
+  font-size: 16px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .crossScore .tips,
+body .box .page2 .pageGroup2 .scoreGroup .crossScore .tips {
+    font-size: 12px;
+  }
+}
+html .box .page2 .pageGroup2 .scoreGroup .circleScore,
+body .box .page2 .pageGroup2 .scoreGroup .circleScore {
+  border-radius: 0px 8px 8px 0px;
+  border-left: 0px;
+}
+html .box .page2 .pageGroup2 .scoreGroup .circleScore .tips,
+body .box .page2 .pageGroup2 .scoreGroup .circleScore .tips {
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  right: 0;
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .scoreGroup .circleScore .tips,
+body .box .page2 .pageGroup2 .scoreGroup .circleScore .tips {
+    font-size: 12px;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup,
+body .box .page2 .pageGroup2 .playGroup {
+  width: 540px;
+  height: 540px;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup,
+body .box .page2 .pageGroup2 .playGroup {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup,
+body .box .page2 .pageGroup2 .playGroup {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup,
+body .box .page2 .pageGroup2 .playGroup {
+    width: 300px;
+    height: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv,
+body .box .page2 .pageGroup2 .playGroup .playDiv {
+  width: 170px;
+  height: 170px;
+  border: 5px solid #ed494c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv,
+body .box .page2 .pageGroup2 .playGroup .playDiv {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv,
+body .box .page2 .pageGroup2 .playGroup .playDiv {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv,
+body .box .page2 .pageGroup2 .playGroup .playDiv {
+    width: 100px;
+    height: 100px;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(1),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(1) {
+  border-top: 0px;
+  border-left: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(2),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(2) {
+  border-top: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(3),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(3) {
+  border-top: 0px;
+  border-right: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(4),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(4) {
+  border-left: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(6),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(6) {
+  border-right: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(7),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(7) {
+  border-bottom: 0px;
+  border-left: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(8),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(8) {
+  border-bottom: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(9),
+body .box .page2 .pageGroup2 .playGroup .playDiv:nth-child(9) {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv .circleDom,
+body .box .page2 .pageGroup2 .playGroup .playDiv .circleDom {
+  width: 120px;
+  height: 120px;
+  border: 15px solid white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .circleDom,
+body .box .page2 .pageGroup2 .playGroup .playDiv .circleDom {
+    width: 80px;
+    height: 80px;
+    border: 8px solid white;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .circleDom,
+body .box .page2 .pageGroup2 .playGroup .playDiv .circleDom {
+    width: 60px;
+    height: 60px;
+    border: 6px solid white;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .circleDom,
+body .box .page2 .pageGroup2 .playGroup .playDiv .circleDom {
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom {
+  color: #000;
+  position: relative;
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before, html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 15px;
+  top: 0;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before, html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    width: 80px;
+    height: 12px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before, html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    width: 60px;
+    height: 10px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before, html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    width: 50px;
+    height: 8px;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -65px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before {
+    left: -40px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:before {
+    left: -25px;
+  }
+}
+html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: -65px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    left: -40px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    left: -30px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after,
+body .box .page2 .pageGroup2 .playGroup .playDiv .crossDom:after {
+    left: -25px;
+  }
+}
+html .box .page2 .pageGroup2 .winner,
+body .box .page2 .pageGroup2 .winner {
+  width: 540px;
+  height: 540px;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  cursor: default;
+  display: none;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .winner,
+body .box .page2 .pageGroup2 .winner {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .winner,
+body .box .page2 .pageGroup2 .winner {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .winner,
+body .box .page2 .pageGroup2 .winner {
+    width: 300px;
+    height: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .winner .winnerBG,
+body .box .page2 .pageGroup2 .winner .winnerBG {
+  position: relative;
+  color: #ed494c;
+}
+html .box .page2 .pageGroup2 .winner .winnerBG:before, html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 60px;
+  background-color: #ed494c;
+  border-radius: 30px;
+  top: -15px;
+  box-shadow: 0 0 2px 0 #ed494c;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before, html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    width: 320px;
+    height: 50px;
+    border-radius: 25px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before, html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before, html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    width: 240px;
+    height: 30px;
+    border-radius: 15px;
+  }
+}
+html .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: -180px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:before {
+    left: -160px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:before {
+    left: -140px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:before,
+body .box .page2 .pageGroup2 .winner .winnerBG:before {
+    left: -120px;
+  }
+}
+html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: -180px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    left: -160px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    left: -140px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .winner .winnerBG:after,
+body .box .page2 .pageGroup2 .winner .winnerBG:after {
+    left: -120px;
+  }
+}
+html .box .page2 .pageGroup2 .winner .stroke,
+body .box .page2 .pageGroup2 .winner .stroke {
+  position: absolute;
+  font-size: 160px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: fantasy;
+  color: #ff6d70;
+  -webkit-text-stroke: 2px #fff;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .winner .stroke,
+body .box .page2 .pageGroup2 .winner .stroke {
+    font-size: 90px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .winner .stroke,
+body .box .page2 .pageGroup2 .winner .stroke {
+    font-size: 80px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .winner .stroke,
+body .box .page2 .pageGroup2 .winner .stroke {
+    font-size: 60px;
+  }
+}
+html .box .page2 .pageGroup2 .loser,
+body .box .page2 .pageGroup2 .loser {
+  margin: 0.5rem 0;
+  width: 540px;
+  height: 540px;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  cursor: default;
+  display: none;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .loser,
+body .box .page2 .pageGroup2 .loser {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .loser,
+body .box .page2 .pageGroup2 .loser {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .loser,
+body .box .page2 .pageGroup2 .loser {
+    width: 300px;
+    height: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .loser .winnerBG,
+body .box .page2 .pageGroup2 .loser .winnerBG {
+  position: relative;
+}
+html .box .page2 .pageGroup2 .loser .winnerBG div,
+body .box .page2 .pageGroup2 .loser .winnerBG div {
+  width: 360px;
+  height: 360px;
+  border: 60px solid #ed494c;
+  border-radius: 50%;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .loser .winnerBG div,
+body .box .page2 .pageGroup2 .loser .winnerBG div {
+    width: 320px;
+    height: 320px;
+    border: 50px solid #ed494c;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .loser .winnerBG div,
+body .box .page2 .pageGroup2 .loser .winnerBG div {
+    width: 280px;
+    height: 280px;
+    border: 40px solid #ed494c;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .loser .winnerBG div,
+body .box .page2 .pageGroup2 .loser .winnerBG div {
+    width: 240px;
+    height: 240px;
+    border: 30px solid #ed494c;
+  }
+}
+html .box .page2 .pageGroup2 .loser .stroke,
+body .box .page2 .pageGroup2 .loser .stroke {
+  position: absolute;
+  font-size: 160px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: fantasy;
+  color: #ff6d70;
+  -webkit-text-stroke: 2px #fff;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .loser .stroke,
+body .box .page2 .pageGroup2 .loser .stroke {
+    font-size: 90px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .loser .stroke,
+body .box .page2 .pageGroup2 .loser .stroke {
+    font-size: 80px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .loser .stroke,
+body .box .page2 .pageGroup2 .loser .stroke {
+    font-size: 60px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce,
+body .box .page2 .pageGroup2 .deuce {
+  margin: 0.5rem 0;
+  width: 540px;
+  height: 540px;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  cursor: default;
+  display: none;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce,
+body .box .page2 .pageGroup2 .deuce {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce,
+body .box .page2 .pageGroup2 .deuce {
+    width: 360px;
+    height: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce,
+body .box .page2 .pageGroup2 .deuce {
+    width: 300px;
+    height: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG,
+body .box .page2 .pageGroup2 .deuce .winnerBG {
+  width: 540px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG,
+body .box .page2 .pageGroup2 .deuce .winnerBG {
+    width: 400px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG,
+body .box .page2 .pageGroup2 .deuce .winnerBG {
+    width: 360px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG,
+body .box .page2 .pageGroup2 .deuce .winnerBG {
+    width: 300px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG .cross,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross {
+    width: 100px;
+    height: 100px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG .cross:before, html .box .page2 .pageGroup2 .deuce .winnerBG .cross:after,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:before,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: #ed494c;
+  border: 4px solid #ed494c;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0 #ed494c;
+  top: 90px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross:before, html .box .page2 .pageGroup2 .deuce .winnerBG .cross:after,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:before,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:after {
+    width: 160px;
+    height: 18px;
+    border-radius: 9px;
+    top: 70px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross:before, html .box .page2 .pageGroup2 .deuce .winnerBG .cross:after,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:before,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:after {
+    width: 120px;
+    height: 16px;
+    border-radius: 8px;
+    top: 50px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .cross:before, html .box .page2 .pageGroup2 .deuce .winnerBG .cross:after,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:before,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:after {
+    width: 100px;
+    height: 14px;
+    border-radius: 7px;
+    top: 40px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG .cross:before,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG .cross:after,
+body .box .page2 .pageGroup2 .deuce .winnerBG .cross:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+html .box .page2 .pageGroup2 .deuce .winnerBG .circle,
+body .box .page2 .pageGroup2 .deuce .winnerBG .circle {
+  width: 180px;
+  height: 180px;
+  border: 18px solid #ed494c;
+  border-radius: 50%;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .circle,
+body .box .page2 .pageGroup2 .deuce .winnerBG .circle {
+    width: 160px;
+    height: 160px;
+    border: 16px solid #ed494c;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .circle,
+body .box .page2 .pageGroup2 .deuce .winnerBG .circle {
+    width: 120px;
+    height: 120px;
+    border: 12px solid #ed494c;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce .winnerBG .circle,
+body .box .page2 .pageGroup2 .deuce .winnerBG .circle {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ed494c;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .stroke,
+body .box .page2 .pageGroup2 .deuce .stroke {
+  position: absolute;
+  font-size: 140px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: fantasy;
+  color: #ff6d70;
+  -webkit-text-stroke: 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  line-height: 140px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 .deuce .stroke,
+body .box .page2 .pageGroup2 .deuce .stroke {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 .deuce .stroke,
+body .box .page2 .pageGroup2 .deuce .stroke {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 .deuce .stroke,
+body .box .page2 .pageGroup2 .deuce .stroke {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+html .box .page2 .pageGroup2 .deuce .stroke:before, html .box .page2 .pageGroup2 .deuce .stroke:after,
+body .box .page2 .pageGroup2 .deuce .stroke:before,
+body .box .page2 .pageGroup2 .deuce .stroke:after {
+  content: "DRAW!";
+}
+html .box .page2 .pageGroup2 button,
+body .box .page2 .pageGroup2 button {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 36px;
+  background-color: #ed494c;
+  color: #fff;
+  border-radius: 8px;
+  border: 0px;
+}
+@media all and (max-width: 414px) {
+  html .box .page2 .pageGroup2 button,
+body .box .page2 .pageGroup2 button {
+    font-size: 32px;
+    height: 60px;
+    width: 90%;
+  }
+}
+@media all and (max-width: 375px) {
+  html .box .page2 .pageGroup2 button,
+body .box .page2 .pageGroup2 button {
+    font-size: 28px;
+    height: 50px;
+  }
+}
+@media all and (max-width: 320px) {
+  html .box .page2 .pageGroup2 button,
+body .box .page2 .pageGroup2 button {
+    font-size: 26px;
+    height: 55px;
+  }
+}

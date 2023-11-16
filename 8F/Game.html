@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tic-Tac-Toe Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/JSPractice/8F/Game.css"></link>
+</head>
+<body>
+    <div class="box">
+        <div class="page1">
+          <div class="pageGroup">
+            <div class="contentGroup">
+              <div class="content">
+                <h2>TIC</h2>
+              </div>
+              <div class="content">
+                <div class="solidCircle"></div>
+              </div>
+              <div class="content">
+                <div class="borderCross"></div>
+              </div>
+              <div class="content">
+                <div class="solidCross"></div>
+              </div>
+              <div class="content">
+                <h2>TAC</h2>
+              </div>
+              <div class="content">
+                <div class="borderCircle"></div>
+              </div>
+              <div class="content">
+                <div class="borderCircle"></div>
+              </div>
+              <div class="content">
+                <div class="solidCross"></div>
+              </div>
+              <div class="content">
+                <h2>TOE</h2>
+              </div>
+            </div>
+            <button class="startBtn" id="startBtn">START</button>
+          </div>
+        </div>
+        <div class="page2">
+          <div class="pageGroup2">
+            <div class="scoreGroup">
+              <div class="scoreDiv crossScore">
+                <div class="crossTips">✖</div>
+                <p>0</p>
+                <h6 class="tips">YOUR TURN!</h6>
+              </div>
+              <span class="center">vs</span>
+              <div class="scoreDiv circleScore">
+                <p>0</p>
+                <div class="circleTips">O</div>
+                <h6 class="tips">YOUR TURN!</h6>
+              </div>
+            </div>
+            <div class="playGroup">
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+              <div class="playDiv"></div>
+            </div>
+            <div class="winner">
+              <div class="winnerBG"></div>
+              <div class="stroke">WINNER!</div>
+            </div>
+            
+            <div class="loser">
+              <div class="winnerBG">
+                <div></div>
+              </div>
+              <div class="stroke">WINNER!</div>
+            </div>
+            
+            <div class="deuce">
+              <div class="winnerBG">
+                <div class="cross"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="stroke">DRAW!</div>
+            </div>
+            
+            <button id = "restartBtn">RESTART</button>
+          </div>
+        </div>
+        
+    </div>
+    <!-- js -->
+    <script src="/JSPractice/8F/Game.js"></script>
+</body>
+</html>
