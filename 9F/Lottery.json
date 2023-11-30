@@ -1,0 +1,25 @@
+[{
+    "icon":"movie",
+    "text":"Movie",
+    "amount": 0
+},{
+    "icon":"cake",
+    "text":"Wish",
+    "amount": 5
+},{
+    "icon":"stars",
+    "text":"Anything",
+    "amount": 5
+},{
+    "icon":"child_care",
+    "text":"Child",
+    "amount": 4
+},{
+    "icon":"flight",
+    "text":"Flight",
+    "amount": 1
+},{
+    "icon":"wifi",
+    "text":"Wifi",
+    "amount": 5
+}]

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #5858B9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: Roboto Condensed;
+}
+html .swal2-container, body .swal2-container {
+  z-index: 9999999;
+}
+html .bgBanner, body .bgBanner {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  z-index: 9998;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  background-color: #343BAA;
+  display: none;
+}
+html .bgBanner .leftFixDiv h3, body .bgBanner .leftFixDiv h3 {
+  text-align: left;
+  font: normal normal bold 72px/72px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  word-wrap: break-word;
+}
+html .bgBanner .rightFixDiv h4, body .bgBanner .rightFixDiv h4 {
+  text-align: left;
+  font: normal normal bold 32px/32px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+html .bgBanner .rightFixDiv h2, body .bgBanner .rightFixDiv h2 {
+  text-align: left;
+  text-decoration: underline;
+  font: normal normal bold 72px/72px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FF00BA;
+  opacity: 1;
+}
+html .box, body .box {
+  width: 542px;
+  height: 554px;
+  position: relative;
+  border-radius: 50%;
+  z-index: 9999;
+  /*overflow: hidden;*/
+  /*----- 歷史紀錄 ------*/
+  /*------- 背景 -------*/
+  /*------- 指針 -------*/
+  /*------- 扇形 -------*/
+}
+html .box .sessionText, body .box .sessionText {
+  position: absolute;
+  top: -5rem;
+  left: -10rem;
+  z-index: 99995;
+}
+html .box .sessionText span, body .box .sessionText span {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fff;
+}
+html .box .sessionText p, body .box .sessionText p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 150px;
+  height: 150px;
+  overflow: auto;
+}
+html .box .bgImg, body .box .bgImg {
+  width: 542px;
+  height: 554px;
+  border-radius: 50%;
+  z-index: 99997;
+  position: relative;
+  overflow: hidden;
+}
+html .box .arrow, body .box .arrow {
+  width: 542px;
+  height: 554px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 99999;
+}
+html .box .arrow .arrowIcon, body .box .arrow .arrowIcon {
+  width: 130px;
+  height: 210px;
+  background-image: url(https://img.onl/QXLDZD);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99998;
+  position: absolute;
+  top: 138px;
+  left: 208px;
+}
+html .box .arrow .centerText, body .box .arrow .centerText {
+  z-index: 99999;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  left: 218px;
+  top: 228px;
+  background-color: #1F1172;
+  text-align: center;
+  border-radius: 50%;
+  color: #FF00BA;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+html .box .arrow .centerText:hover, body .box .arrow .centerText:hover {
+  color: #F0BEFF;
+  background-color: #FF00BA;
+}
+html .box .sector, body .box .sector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  overflow: hidden;
+}
+html .box .sector::before, body .box .sector::before {
+  content: "";
+  width: 270px;
+  height: 540px;
+  position: absolute;
+  transform-origin: right center;
+  transform: rotate(60deg);
+}
+html .box .sector .textGroup, body .box .sector .textGroup {
+  transform: rotate(30deg);
+  height: 50%;
+  padding-top: 1%;
+  padding-left: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+html .box .sector .textGroup p, body .box .sector .textGroup p {
+  margin: 0;
+  padding: 0;
+  font-size: 72px;
+}
+html .box .sector .textGroup span, body .box .sector .textGroup span {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 0.75;
+}
+html .box .sector:nth-child(odd)::before, body .box .sector:nth-child(odd)::before {
+  background-color: #F0BEFF;
+}
+html .box .sector:nth-child(odd) .textGroup, body .box .sector:nth-child(odd) .textGroup {
+  color: #343BAA;
+}
+html .box .sector:nth-child(even)::before, body .box .sector:nth-child(even)::before {
+  background-color: #343BAA;
+}
+html .box .sector:nth-child(even) .textGroup, body .box .sector:nth-child(even) .textGroup {
+  color: #F0BEFF;
+}
+html .box .sector-1, body .box .sector-1 {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+html .box .sector-2, body .box .sector-2 {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+html .box .sector-3, body .box .sector-3 {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+html .box .sector-4, body .box .sector-4 {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+html .box .sector-5, body .box .sector-5 {
+  transform: translate(-50%, -50%) rotate(210deg);
+}
+html .box .sector-6, body .box .sector-6 {
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+html .box .chooseSector::before, body .box .chooseSector::before {
+  background-color: #FF00BA !important;
+}
+html .box .chooseSector .textGroup, body .box .chooseSector .textGroup {
+  color: #fff !important;
+}
+
+.aniRotate {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}

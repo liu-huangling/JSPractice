@@ -34,7 +34,7 @@ let textArray =[
     },{
         num:"九",
         name:"抽獎轉盤",
-        url:""
+        url:"/JSPractice/9F/Lottery.html"
     },/*{
         num:"十",
         name:"Chrome應用程式(幹話產生器)",
