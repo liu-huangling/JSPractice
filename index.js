@@ -35,11 +35,11 @@ let textArray =[
         num:"九",
         name:"抽獎轉盤",
         url:""
-    },{
+    },/*{
         num:"十",
         name:"Chrome應用程式(幹話產生器)",
         url:""
-    },{
+    },*/{
         num:"十一",
         name:"燈箱效果",
         url:"/JSPractice/11F/lightBox.html"
