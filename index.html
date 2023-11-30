@@ -25,7 +25,7 @@
       <div class="container">
         <h2 class="titleName" @click="link()">JS地下城</h2>
         <div class="main">
-            <div class="blockGroup" v-for = "item in textArray">
+            <div class="blockGroup" v-for = "(item,keys) in textArray">
                 <div class="mask">
                     第{{item.num}}關
                 </div>

@@ -15,11 +15,11 @@ let textArray =[
         num:"四",
         name:"時區",
         url:"/JSPractice/4F/TimeZone.html"
-    },{
+    }/*,{
         num:"五",
         name:"全台空氣指標儀板表",
         url:""
-    },{
+    }*/,{
         num:"六",
         name:"60秒算術遊戲",
         url:"/JSPractice/6F/60SecondsChallenge.html"
@@ -42,7 +42,7 @@ let textArray =[
     },{
         num:"十一",
         name:"燈箱效果",
-        url:""
+        url:"/JSPractice/11F/lightBox.html"
     },{
         num:"十二",
         name:"拼圖",

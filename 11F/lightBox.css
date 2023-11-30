@@ -1,0 +1,386 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,700,900");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans";
+  cursor: default;
+}
+html .box, body .box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+@media all and (max-width: 1200px) {
+  html .box, body .box {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+html .box .textGroup, body .box .textGroup {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-top: 16px solid #000;
+  margin: 0 5rem;
+}
+@media all and (max-width: 1200px) {
+  html .box .textGroup, body .box .textGroup {
+    border: 0;
+    border-left: 16px solid #000;
+    margin: 2.5rem 0;
+  }
+}
+@media all and (max-width: 768px) {
+  html .box .textGroup, body .box .textGroup {
+    border-left: 12px solid #000;
+    margin: 2rem 0;
+  }
+}
+@media all and (max-width: 414px) {
+  html .box .textGroup, body .box .textGroup {
+    border-left: 8px solid #000;
+    margin: 1.5rem 0;
+  }
+}
+html .box .textGroup .textBox, body .box .textGroup .textBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: row-reverse;
+}
+@media all and (max-width: 1200px) {
+  html .box .textGroup .textBox, body .box .textGroup .textBox {
+    flex-direction: column;
+  }
+}
+html .box .textGroup .textBox h1, body .box .textGroup .textBox h1 {
+  /*文字變成直式*/
+  writing-mode: vertical-rl;
+  word-break: break-all;
+  text-decoration: underline;
+  font-size: 72px;
+  font-weight: 800;
+  margin: 0;
+}
+@media all and (max-width: 1200px) {
+  html .box .textGroup .textBox h1, body .box .textGroup .textBox h1 {
+    writing-mode: horizontal-tb;
+    font-size: 60px;
+  }
+}
+@media all and (max-width: 768px) {
+  html .box .textGroup .textBox h1, body .box .textGroup .textBox h1 {
+    font-size: 48px;
+  }
+}
+@media all and (max-width: 414px) {
+  html .box .textGroup .textBox h1, body .box .textGroup .textBox h1 {
+    font-size: 36px;
+  }
+}
+html .box .imageGroup, body .box .imageGroup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+html .box .imageGroup .imageDiv, body .box .imageGroup .imageDiv {
+  width: 855px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 1200px) {
+  html .box .imageGroup .imageDiv, body .box .imageGroup .imageDiv {
+    justify-content: center;
+  }
+}
+html .box .imageGroup .imageDiv .imageBox, body .box .imageGroup .imageDiv .imageBox {
+  width: 255px;
+  height: 255px;
+  overflow: hidden;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+html .box .imageGroup .imageDiv .imageBox img, body .box .imageGroup .imageDiv .imageBox img {
+  max-height: 100%;
+}
+html .box .imageGroup .imageDiv .imageBox:hover, body .box .imageGroup .imageDiv .imageBox:hover {
+  animation-name: boxShadow;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards; /*維持動畫最後模樣*/
+}
+html .mask, body .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7215686275);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: none;
+}
+html .floatGroup, body .floatGroup {
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: none;
+}
+@media all and (max-width: 1200px) {
+  html .floatGroup, body .floatGroup {
+    border: 0;
+    margin: 2.5rem 0;
+  }
+}
+@media all and (max-width: 992px) {
+  html .floatGroup, body .floatGroup {
+    margin: 0.5rem 0;
+  }
+}
+@media all and (max-width: 768px) {
+  html .floatGroup, body .floatGroup {
+    margin: 0;
+  }
+}
+html .floatGroup .floatBox, body .floatGroup .floatBox {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+@media all and (max-width: 1200px) {
+  html .floatGroup .floatBox, body .floatGroup .floatBox {
+    width: 100%;
+    height: 60%;
+  }
+}
+@media all and (max-width: 992px) {
+  html .floatGroup .floatBox, body .floatGroup .floatBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+html .floatGroup .floatBox .textBox, body .floatGroup .floatBox .textBox {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+@media all and (max-width: 992px) {
+  html .floatGroup .floatBox .textBox, body .floatGroup .floatBox .textBox {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .textBox, body .floatGroup .floatBox .textBox {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+}
+html .floatGroup .floatBox .textBox h2, body .floatGroup .floatBox .textBox h2 {
+  font-size: 72px;
+  margin: 0;
+}
+html .floatGroup .floatBox .textBox h2 small, body .floatGroup .floatBox .textBox h2 small {
+  font-size: 36px;
+  margin: 0.15rem 0;
+}
+@media all and (max-width: 992px) {
+  html .floatGroup .floatBox .textBox h2 small, body .floatGroup .floatBox .textBox h2 small {
+    font-size: 32px;
+  }
+}
+@media all and (max-width: 768px) {
+  html .floatGroup .floatBox .textBox h2 small, body .floatGroup .floatBox .textBox h2 small {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .textBox h2 small, body .floatGroup .floatBox .textBox h2 small {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 992px) {
+  html .floatGroup .floatBox .textBox h2, body .floatGroup .floatBox .textBox h2 {
+    font-size: 60px;
+  }
+}
+@media all and (max-width: 768px) {
+  html .floatGroup .floatBox .textBox h2, body .floatGroup .floatBox .textBox h2 {
+    font-size: 52px;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .textBox h2, body .floatGroup .floatBox .textBox h2 {
+    font-size: 44px;
+  }
+}
+html .floatGroup .floatBox .textBox p, body .floatGroup .floatBox .textBox p {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-weight: 800;
+  width: 240px;
+  font-size: 24px;
+  margin: 0;
+}
+@media all and (max-width: 992px) {
+  html .floatGroup .floatBox .textBox p, body .floatGroup .floatBox .textBox p {
+    font-size: 22px;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .textBox p, body .floatGroup .floatBox .textBox p {
+    font-size: 20px;
+    width: 80%;
+  }
+}
+html .floatGroup .floatBox .textBox p small, body .floatGroup .floatBox .textBox p small {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0.15rem 0;
+}
+html .floatGroup .floatBox .slickImage, body .floatGroup .floatBox .slickImage {
+  width: auto;
+  height: 100%;
+  border: 15px solid #fff;
+  border-radius: 7px;
+  position: relative;
+}
+@media all and (max-width: 768px) {
+  html .floatGroup .floatBox .slickImage, body .floatGroup .floatBox .slickImage {
+    width: 90%;
+    height: auto;
+    border: 12px solid #fff;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .slickImage, body .floatGroup .floatBox .slickImage {
+    width: 80%;
+    border: 10px solid #fff;
+  }
+}
+html .floatGroup .floatBox .slickImage .close, body .floatGroup .floatBox .slickImage .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  font-size: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media all and (max-width: 768px) {
+  html .floatGroup .floatBox .slickImage .close, body .floatGroup .floatBox .slickImage .close {
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 414px) {
+  html .floatGroup .floatBox .slickImage .close, body .floatGroup .floatBox .slickImage .close {
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+  }
+}
+html .floatGroup .floatBox .slickImage .showImageGroup, body .floatGroup .floatBox .slickImage .showImageGroup {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+html .floatGroup .floatBox .slickImage .showImageGroup::-webkit-scrollbar, body .floatGroup .floatBox .slickImage .showImageGroup::-webkit-scrollbar {
+  display: none;
+}
+html .floatGroup .floatBox .slickImage .showImageGroup img, body .floatGroup .floatBox .slickImage .showImageGroup img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+html .floatGroup .floatBox .slickImage .prev, html .floatGroup .floatBox .slickImage .next, body .floatGroup .floatBox .slickImage .prev, body .floatGroup .floatBox .slickImage .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+}
+html .floatGroup .floatBox .slickImage .prev:hover, html .floatGroup .floatBox .slickImage .next:hover, body .floatGroup .floatBox .slickImage .prev:hover, body .floatGroup .floatBox .slickImage .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+html .floatGroup .floatBox .slickImage .prev:active, html .floatGroup .floatBox .slickImage .next:active, body .floatGroup .floatBox .slickImage .prev:active, body .floatGroup .floatBox .slickImage .next:active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+html .floatGroup .floatBox .slickImage .next, body .floatGroup .floatBox .slickImage .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*----------- 動畫樣式 ---------*/
+@keyframes boxShadow {
+  from {
+    box-shadow: 0px 0px 1px #000;
+    transform: scale(0.95);
+  }
+  to {
+    box-shadow: 12px 12px 1px #000;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=lightBox.css.map */
