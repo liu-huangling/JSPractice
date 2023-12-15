@@ -46,7 +46,7 @@ let textArray =[
     },{
         num:"十二",
         name:"拼圖",
-        url:"/JSPractice/9F/Puzzle.html"
+        url:"/JSPractice/12F/Puzzle.html"
     },
 ];
 
