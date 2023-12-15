@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+* {
+  font-family: "Noto Serif TC";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/img-bg-Qingming.png");
+  position: relative;
+  /*--------------------- 動畫樣式 ------------------------*/
+  /*----------------------- 拼圖 -----------------------*/
+  /*----- 正確位置 -----*/
+}
+html .mask, body .mask {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+html .gamepage-start, body .gamepage-start {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+html .gamepage-start .box, body .gamepage-start .box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+html .gamepage-start .box .imgBox, body .gamepage-start .box .imgBox {
+  margin-bottom: 2rem;
+  position: relative;
+  animation-name: Gradient;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+html .gamepage-start .box .imgBox::after, body .gamepage-start .box .imgBox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 548px;
+  height: 548px;
+  animation-name: Gradient;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+html .gamepage-start .box .imgBox::before, body .gamepage-start .box .imgBox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 558px;
+  height: 558px;
+  animation-name: Gradient;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+}
+html .gamepage-start .box button, body .gamepage-start .box button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  width: 350px;
+  height: 65px;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+html .gamepage-start .box button:hover, body .gamepage-start .box button:hover {
+  box-shadow: 0px 0px 20px 1px #fff;
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  color: rgba(0, 0, 0, 0.4196078431);
+  transition: 0.6s ease;
+}
+html .gamepage-game, body .gamepage-game {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+html .gamepage-game .box, body .gamepage-game .box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  position: relative;
+}
+html .gamepage-game .box h2, body .gamepage-game .box h2 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+html .gamepage-game .box .puzzleGroup, body .gamepage-game .box .puzzleGroup {
+  width: 542px;
+  height: 542px;
+  margin: 1.5rem 2rem;
+  border: 1px solid #a39274;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+html .gamepage-game .box .puzzleGroup .puzzleBox, body .gamepage-game .box .puzzleGroup .puzzleBox {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  outline: 0.5px solid #a39274;
+}
+html .gamepage-game .box button, body .gamepage-game .box button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  width: 350px;
+  height: 65px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+}
+html .gamepage-game .box button:hover, body .gamepage-game .box button:hover {
+  box-shadow: 0px 0px 20px 1px #fff;
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  transition: 0.6s ease;
+  color: rgba(0, 0, 0, 0.4196078431);
+}
+html .gamepage-gameover, body .gamepage-gameover {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+html .gamepage-gameover .box, body .gamepage-gameover .box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+html .gamepage-gameover .box .imgBox, body .gamepage-gameover .box .imgBox {
+  margin-right: 2rem;
+  box-shadow: 0px 0px 20px 13px rgba(255, 255, 255, 0.7019607843);
+  outline: 2px solid #fff;
+}
+html .gamepage-gameover .box .textGroup, body .gamepage-gameover .box .textGroup {
+  width: 350px;
+  height: 538px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+html .gamepage-gameover .box .textGroup h1, body .gamepage-gameover .box .textGroup h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+html .gamepage-gameover .box .textGroup h5, body .gamepage-gameover .box .textGroup h5 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+}
+html .gamepage-gameover .box .textGroup p, body .gamepage-gameover .box .textGroup p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+html .gamepage-gameover .box .textGroup button, body .gamepage-gameover .box .textGroup button {
+  width: 350px;
+  height: 60px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+html .hidden, body .hidden {
+  animation-name: hidden;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; /*維持動畫最後模樣*/
+}
+html .show, body .show {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; /*維持動畫最後模樣*/
+}
+html .hover, body .hover {
+  background-color: rgba(198, 198, 198, 0.2941176471);
+}
+html .puzzle, body .puzzle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: move;
+}
+html .puzzle-2, body .puzzle-2 {
+  top: 0px;
+  left: -28px !important;
+}
+html .puzzle-5, body .puzzle-5 {
+  top: -28px !important;
+  left: 0px;
+}
+html .puzzle-6, body .puzzle-6 {
+  top: 0px;
+  left: -28px !important;
+}
+html .puzzle-7, body .puzzle-7 {
+  top: -28px !important;
+  left: 0px;
+}
+html .puzzle-8, body .puzzle-8 {
+  top: 0px;
+  left: -28px !important;
+}
+html .puzzle-9, body .puzzle-9 {
+  top: -28px !important;
+  left: 0px;
+}
+
+/*--------------------- 動畫 ------------------------*/
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Gradient {
+  from {
+    outline: 2px solid rgba(255, 255, 255, 0.9019607843);
+  }
+  to {
+    outline: 2px solid rgba(255, 255, 255, 0.1411764706);
+  }
+}/*# sourceMappingURL=Puzzle.css.map */
