@@ -25,7 +25,7 @@ function GameStart(){
         PuzzleDiv.dataset.num = i;
     
         let Puzzle = document.createElement('img');
-        Puzzle.src = '/img/'+puzzleName+ i +'.png';
+        Puzzle.src = 'img/'+puzzleName+ i +'.png';
         Puzzle.className = "puzzle";// puzzle-"+ i;
         Puzzle.alt = puzzleName+ i;
         Puzzle.draggable = true;

@@ -9,7 +9,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/img/img-bg-Qingming.png");
+  background-image: url("img/img-bg-Qingming.png");
   position: relative;
   /*--------------------- 動畫樣式 ------------------------*/
   /*----------------------- 拼圖 -----------------------*/
