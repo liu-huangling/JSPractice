@@ -43,22 +43,6 @@ let textArray =[
         num:"十一",
         name:"燈箱效果",
         url:"/JSPractice/11F/lightBox.html"
-    },{
-        num:"十二",
-        name:"拼圖",
-        url:""
-    },{
-        num:"十三",
-        name:"貪吃蛇",
-        url:""
-    },{
-        num:"十四",
-        name:"求籤",
-        url:""
-    },{
-        num:"十五",
-        name:"死亡筆記本",
-        url:""
     }
 ];
 
