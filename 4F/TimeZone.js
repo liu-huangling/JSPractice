@@ -36,10 +36,19 @@ const app = new Vue({
           let year = timeZone.getFullYear();
           // 取英文簡稱的月份名稱
           let monthName = new Date().toLocaleString("en-US",{timeZone:'Asia/Taipei',month:'short'}); 
-          let day = timeZone.getDate()< 10 ? '0' + timeZone.getDate() : timeZone.getDate();
-          // 小於兩位數前面會補0
-          let hours = timeZone.getHours() < 10 ? '0' + timeZone.getHours() : timeZone.getHours();
-          let minutes = timeZone.getMinutes() < 10 ? '0' + timeZone.getMinutes() : timeZone.getMinutes();
+          // 小於兩位數前面會補0 ----原版
+          // let day = timeZone.getDate()< 10 ? '0' + timeZone.getDate() : timeZone.getDate();
+          // let hours = timeZone.getHours() < 10 ? '0' + timeZone.getHours() : timeZone.getHours();
+          // let minutes = timeZone.getMinutes() < 10 ? '0' + timeZone.getMinutes() : timeZone.getMinutes();
+          
+          // 優化 ---- 2024/02/22 
+          let day = timeZone.getDate();
+          day = String(day).padStart(2, "0");
+          let hours = timeZone.getHours();
+          hours = String(hours).padStart(2, "0");
+          let minutes = timeZone.getMinutes();
+          minutes = String(minutes).padStart(2, "0");
+        
           
           let timeArray = {
             'year':year,
