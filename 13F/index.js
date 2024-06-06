@@ -34,6 +34,7 @@ function itinGame(){
 function createSnakeMap(){
     gameArea.innerHTML = " ";
 
+    document.querySelector('.now > span').innerHTML = 0;
     for(var i = 0;i < rowNum ; i++){
         let row = document.createElement('div');
         row.classList.add('row');
@@ -133,6 +134,7 @@ function checkGameOver(){
     for(var i=1;i<snake.length;i++){
         if((snake[0].x === snake[i].x)&&(snake[0].y === snake[i].y)){
             console.log("die")
+            gameTimer =0;
             judgeScore();
             gameOverPage(score,localStorage.getItem('history'));
         }
@@ -140,6 +142,7 @@ function checkGameOver(){
     // 60秒遊戲結束
     if(gameTimer >=60){
         console.log("gameover")
+        gameTimer =0;
         judgeScore();
         gameOverPage(score,localStorage.getItem('history'));
     }
@@ -172,7 +175,6 @@ function gameOverPage(score,history){
     document.getElementById("overScore").innerHTML = score;
     document.getElementById("bestScore").innerHTML = history;
     score = 0;
-    gameTimer =0;
     snake.length = 0;
     snake = [{x:8,y:6},{x:7,y:6},{x:7,y:5}]; 
     direction = "ArrowRight"; 
@@ -269,8 +271,8 @@ function judgeKey(e){
             break;
     }
     //延遲時間，防止同時按下兩個方向鍵
-  changeDirection = false;
-  setTimeout(() =>{
-    changeDirection = true;
-  }, 200);
+    changeDirection = false;
+    setTimeout(() =>{
+        changeDirection = true;
+    }, 100);
 }
