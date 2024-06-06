@@ -48,6 +48,11 @@ let textArray =[
         name:"拼圖",
         url:"/JSPractice/12F/Puzzle.html"
     },
+    {
+        num:"十三",
+        name:"貪食蛇",
+        url:"/JSPractice/13F/index.html"
+    },
 ];
 
 const app = {
