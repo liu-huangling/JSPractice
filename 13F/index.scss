@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+$highBlue: #00FFE2;
+$blue: #002A9D;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+    cursor: default;
+}
+@mixin lengthGroup($w,$h) {
+    width: $w;
+    height: $h;
+}
+body{
+    @include lengthGroup(100%, 100vh);
+    overflow: hidden;
+    
+    .game-start{
+        @include lengthGroup(100%, 100vh);
+        background-image: url('./img/bg-start.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .textGroup{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .titleGroup{
+                display: flex;
+                h1{
+                    font-size: 36px;
+                    color: #fff;
+                }
+                .white-square{
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    margin: 0 20px;
+                }
+            }
+            p{
+                font-size: 24px;
+                margin-top: 40px;
+                color: $highBlue;
+            }
+        }
+    }
+    .game-play{
+        @include lengthGroup(100%, 100vh);
+        background-color: #000;
+        position: relative;
+        .card{
+            @include lengthGroup(1280px, 800px);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .textGroup{
+                color:#fff;
+                font-size: 30px;
+                span{
+                    margin: 0;
+                    padding: 0;
+                }
+                .straight{
+                    writing-mode: vertical-rl;
+                    transform: rotate(180deg);
+                }
+                .horizontal{
+                    position: absolute;
+                    left: 30px;
+                }
+            }
+            .text01{
+                position: absolute;
+                top: 40px;
+                left: 40px;
+            }
+            .text02{
+                position: absolute;
+                bottom: 42px;
+                right: 42px;
+                .straight{
+                    writing-mode: vertical-rl;
+                    transform: rotate(360deg);
+                }
+                .horizontal{
+                    position: absolute;
+                    left: -180px;
+                    bottom: 0;
+                    transform: rotate(180deg);
+                }
+            }
+            .score-collection{
+                color: #fff;
+                small{
+                    position: relative;
+                    bottom: 5px;
+                }
+                span{
+                    font-size: 30px;
+                }
+            }
+            .now{
+                position: absolute;
+                top: 40px;
+                right: 80px;
+            }
+            .history{
+                position: absolute;
+                left: 80px;
+                bottom: 40px ;
+            }
+            .game-area{
+                @include lengthGroup(1120px, 640px);
+                background-color: #ffffff1f;
+                
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .box{
+                        @include lengthGroup(40px, 40px);
+                        outline: 1px solid $blue;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .snake{
+                            @include lengthGroup(100%, 100%);
+                            background-color: rgba(255,255,255,1);
+                        }
+                        .snake.head{
+                            background-color: $highBlue !important;
+                            box-shadow: 0px 0px 20px 2px #ffffff8a;
+                        }
+                        .food{
+                            @include lengthGroup(100%, 100%);
+                            background-image: url(./img/ic-point.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .game-over{
+        @include lengthGroup(100%, 100vh);
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+
+        .titleGroup{
+            display: flex;
+            align-items: center;
+            h1{
+                font-size: 36px;
+            }
+            .white-square{
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                margin: 0 20px;
+            }
+        }
+        .scoreGroup{
+            display: flex;
+            align-items: center;
+            margin-top: 44px;
+            .score-collection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 90px;
+                small{
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 36px;
+                    margin-top: 19px;
+                }
+            }
+            p{
+                font-size: 36px;
+            }
+        }
+        h2{
+            margin-top: 64px;
+            @include lengthGroup(208px, 41px);
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            opacity: 1;
+            color:#000;
+            background-color: #fff;
+        }
+        .choose{
+            color: $highBlue;
+            opacity: 1;
+            margin-top: 40px;
+            transform: translateY(0px);
+            animation: upDown 3s infinite;
+            span{
+                font-size: 24px;
+                margin: 0 25px;
+            }
+        }
+        
+
+    }
+    .none{
+        display: none !important;
+    }
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateY(0px);
+        opacity: .8;
+    }
+    50%{
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: .8;
+    }
+}

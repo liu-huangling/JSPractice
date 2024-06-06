@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed:100,300,400,500,700,900");
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto Condensed;
+}
+html .box, body .box {
+  width: 100%;
+  height: 100vh;
+  background-color: #FF9D00;
+}
+html .box .page1, body .box .page1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+html .box .page1 .page1Box, body .box .page1 .page1Box {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+html .box .page1 .topText, body .box .page1 .topText {
+  flex-direction: row;
+  height: 200px;
+  padding-bottom: 4rem;
+}
+html .box .page1 .topText h1, body .box .page1 .topText h1 {
+  line-height: 200px;
+  font-size: 200px;
+  text-shadow: 12px 0 0 #000;
+  color: #fff;
+  padding: 0 1.5rem;
+  margin: 0;
+}
+html .box .page1 .topText div, body .box .page1 .topText div {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+html .box .page1 .topText div p, body .box .page1 .topText div p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 450px;
+  padding: 0;
+  margin: 0;
+  font-size: 70px;
+  font-weight: 900;
+}
+html .box .page1 .topText div p span, body .box .page1 .topText div p span {
+  line-height: 40px;
+  font-size: 40px;
+  color: #fff;
+  border: 0px;
+  border-bottom: 15px solid #fff;
+  border-style: double;
+  margin-top: 20px;
+  padding: 0;
+  margin-left: 0.35rem;
+}
+html .box .page1 .bottomText, body .box .page1 .bottomText {
+  flex-direction: column;
+  padding-top: 4rem;
+}
+html .box .page1 .bottomText button, body .box .page1 .bottomText button {
+  width: 350px;
+  height: 58px;
+  border-radius: 0;
+  border: 0px;
+  background-color: #000;
+  color: #FF9D00;
+  font-size: 36px;
+  font-weight: 700;
+}
+html .box .page1 .bottomText span, body .box .page1 .bottomText span {
+  font: italic normal normal 24px/28px Roboto Condensed;
+  color: #fff;
+}
+html .box .page2, body .box .page2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  display: none;
+}
+html .box .page2 .page2Box, body .box .page2 .page2Box {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+html .box .page2 .top2Text, body .box .page2 .top2Text {
+  padding-bottom: 3rem;
+}
+html .box .page2 .top2Text .left, body .box .page2 .top2Text .left {
+  width: 310px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+html .box .page2 .top2Text .right, body .box .page2 .top2Text .right {
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 96px;
+  font-style: italic;
+  color: #fff;
+  font-weight: 700;
+}
+html .box .page2 .top2Text div p, body .box .page2 .top2Text div p {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  color: #fff;
+}
+html .box .page2 .top2Text div p:first-child, body .box .page2 .top2Text div p:first-child {
+  border: 4px solid #fff;
+  font-weight: 500;
+  padding: 0.25rem;
+}
+html .box .page2 .top2Text div p:last-child, body .box .page2 .top2Text div p:last-child {
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+html .box .page2 .top2Text div p:last-child:before, body .box .page2 .top2Text div p:last-child:before {
+  content: "SCORE";
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0.45rem;
+  margin-right: 0.35rem;
+  background-color: #fff;
+}
+html .box .page2 .bottom2Text, body .box .page2 .bottom2Text {
+  padding-top: 3rem;
+}
+html .box .page2 .bottom2Text h1, body .box .page2 .bottom2Text h1 {
+  font-size: 112px;
+  font-weight: 700;
+}
+html .box .page2 .bottom2Text h2, body .box .page2 .bottom2Text h2 {
+  font-size: 102px;
+  color: #fff;
+}
+html .box .page2 .bottom2Text .numberGroup, body .box .page2 .bottom2Text .numberGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+html .box .page2 .bottom2Text .numberGroup input, body .box .page2 .bottom2Text .numberGroup input {
+  width: 255px;
+  height: 130px;
+  border: 0px;
+  border-radius: 0;
+  padding: 0 1rem;
+  margin: 0;
+  font-size: 90px;
+  text-align: center;
+}
+html .box .page2 .bottom2Text .numberGroup input[type=number]::-webkit-outer-spin-button,
+html .box .page2 .bottom2Text .numberGroup input[type=number]::-webkit-inner-spin-button, body .box .page2 .bottom2Text .numberGroup input[type=number]::-webkit-outer-spin-button,
+body .box .page2 .bottom2Text .numberGroup input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html .box .page2 .bottom2Text .numberGroup span, body .box .page2 .bottom2Text .numberGroup span {
+  font-style: italic;
+  color: #fff;
+  font-size: 16px;
+}
+html .box .page3, body .box .page3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  display: none;
+}
+html .box .page3 .top3Text, body .box .page3 .top3Text {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+html .box .page3 .top3Text .final1, body .box .page3 .top3Text .final1 {
+  color: #fff;
+  border: 4px solid #fff;
+  padding: 0.5rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+html .box .page3 .top3Text .final2, body .box .page3 .top3Text .final2 {
+  font-size: 56px;
+  font-weight: 700;
+}
+html .box .page3 .top3Text .final2:before, html .box .page3 .top3Text .final2:after, body .box .page3 .top3Text .final2:before, body .box .page3 .top3Text .final2:after {
+  content: "—";
+  padding: 0 0.5rem;
+  color: #fff;
+}
+html .box .page3 .top3Text .final3, body .box .page3 .top3Text .final3 {
+  font-size: 112px;
+  font-weight: 900;
+}
+html .box .page3 .top3Text .filal4, body .box .page3 .top3Text .filal4 {
+  font-size: 20px;
+  font-weight: 900;
+}
+html .box .page3 button, body .box .page3 button {
+  border-radius: 0;
+  width: 350px;
+  height: 58px;
+  border: 0px;
+  background-color: #000;
+  color: #FF9D00;
+  font-weight: 700;
+  font-size: 36px;
+}/*# sourceMappingURL=60SecondsChallenge.css.map */

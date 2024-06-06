@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,700,900");
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-orange {
+  background-color: #FFAF6A;
+}
+
+.bg-red {
+  background-color: #FF5757;
+}
+
+.bg-purple {
+  background-color: #AD1774;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+html, body {
+  margin: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Open Sans;
+}
+html .box, body .box {
+  height: 100vh;
+  position: relative;
+  background-color: #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html .box .top, body .box .top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html .box .top .toolGroup, body .box .top .toolGroup {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+html .box .top .toolGroup .tools, body .box .top .toolGroup .tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 1rem;
+  opacity: 1;
+}
+html .box .top .toolGroup .tools svg, body .box .top .toolGroup .tools svg {
+  width: 25px;
+  height: 25px;
+}
+html .box .top .toolGroup .tools span, body .box .top .toolGroup .tools span {
+  margin: 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+html .box .top .toolGroup .tools.disabled, body .box .top .toolGroup .tools.disabled {
+  opacity: 0.7;
+}
+html .box .top .toolGroup #file, body .box .top .toolGroup #file {
+  width: 1px;
+  height: 1px;
+}
+html .box .top .hiddenTop, body .box .top .hiddenTop {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 25px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+html .box .top .hiddenTop svg, body .box .top .hiddenTop svg {
+  position: absolute;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  transform: 0;
+}
+html .box .paint, body .box .paint {
+  width: 100%;
+  height: 100%;
+}
+html .box .bottom, body .box .bottom {
+  position: absolute;
+  bottom: 25px;
+  width: 720px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 45px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1607843137);
+}
+html .box .bottom .hiddenBottom, body .box .bottom .hiddenBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #fff;
+  top: -25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+html .box .bottom .hiddenBottom svg, body .box .bottom .hiddenBottom svg {
+  width: 25px;
+  height: 25px;
+}
+html .box .bottom .bottomGroup, body .box .bottom .bottomGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+html .box .bottom .paintPen, body .box .bottom .paintPen {
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+html .box .bottom .paintPen svg, body .box .bottom .paintPen svg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+html .box .bottom .penSize, body .box .bottom .penSize {
+  cursor: default;
+}
+html .box .bottom .penSize input, body .box .bottom .penSize input {
+  width: 70px;
+  border: none;
+  background-color: #fff;
+  background: #E8E8E8 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  margin: 0 0.25rem;
+  text-align: center;
+}
+html .box .bottom .penSize input::-webkit-inner-spin-button, body .box .bottom .penSize input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html .box .bottom .ColorGroup, body .box .bottom .ColorGroup {
+  cursor: default;
+}
+html .box .bottom .ColorGroup .color, body .box .bottom .ColorGroup .color {
+  width: 45px;
+  height: 45px;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+html .box .closePaintBtn, body .box .closePaintBtn {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1607843137);
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+html .box .closePaintBtn svg, body .box .closePaintBtn svg {
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+}
+
+/* 動畫設定 */
+.hidden {
+  animation-name: hidden;
+  animation-duration: 2s;
+}
+
+@keyframes hidden {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -90px;
+  }
+}
+.show {
+  animation-name: show;
+  animation-duration: 2s;
+}
+
+@keyframes show {
+  from {
+    top: -90px;
+  }
+  to {
+    top: 0px;
+  }
+}/*# sourceMappingURL=Paint.css.map */
