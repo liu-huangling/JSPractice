@@ -172,6 +172,7 @@ function gameOverPage(score,history){
     document.getElementById("overScore").innerHTML = score;
     document.getElementById("bestScore").innerHTML = history;
     score = 0;
+    gameTimer =0;
     snake.length = 0;
     snake = [{x:8,y:6},{x:7,y:6},{x:7,y:5}]; 
     direction = "ArrowRight"; 
