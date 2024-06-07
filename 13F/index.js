@@ -94,7 +94,7 @@ function judgeKey(e){
             break;
         default:
             // 其他禁用
-            //e.returnValue = false;
+            e.returnValue = false;
             break;
     }
     //延遲時間，防止同時按下兩個方向鍵
