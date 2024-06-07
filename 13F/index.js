@@ -1,6 +1,6 @@
 addEventListener("load", (event) => {
     window.addEventListener('keydown', judgeKey ,false);
-    itinGame()
+    //itinGame()
 });
 
 // game board
