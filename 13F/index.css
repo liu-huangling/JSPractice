@@ -204,7 +204,7 @@ body .game-over h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: default;
   opacity: 1;
   color: #000;
   background-color: #fff;

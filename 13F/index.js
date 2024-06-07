@@ -1,7 +1,9 @@
 addEventListener("load", (event) => {
     window.addEventListener('keydown', judgeKey ,false);
+    itinGame()
 });
 
+// game board
 const gameStartDom = document.getElementById("game-start");
 const gamePlayDom = document.getElementById("game-play");
 const gameOverDom = document.getElementById("game-over");
@@ -19,14 +21,95 @@ let columnNum = 28;
 let gameInterval , gameOver ,gameTimer=0;
 let changeDirection = true;
 
+let timer =500;
+
+// 判斷鍵盤按鍵
+function judgeKey(e){
+    if(changeDirection !== true){
+        return;
+    }
+    switch(e.keyCode){
+        case 32:
+            //  Space
+            if(gameStartDom.className.includes("none")){
+                return;
+            }
+            gameStartDom.classList.add('none');
+            gamePlayDom.classList.remove('none');
+            itinGame();
+            break;
+        case 40:
+            //  ArrowDown
+            if(gamePlayDom.className.includes("none")){
+                return;
+            }
+            
+            if(direction == "ArrowUp") return;
+            snakeDirection = {x:0,y:1};
+            direction = "ArrowDown";
+            break;
+        case 38:
+            // ArrowUp
+            if(gamePlayDom.className.includes("none")){
+                return;
+            }
+            if(direction == "ArrowDown") return;
+            snakeDirection = {x:0,y:-1};
+            direction = "ArrowUp";
+            break;
+        case 39:
+            // ArrowRight
+            if(gamePlayDom.className.includes("none")){
+                return;
+            }
+            if(direction == "ArrowLeft") return;
+            snakeDirection = {x:1,y:0};
+            direction = "ArrowRight";
+            break;
+        case 37:
+            // ArrowLeft
+            if(gamePlayDom.className.includes("none")){
+                return;
+            }
+            if(direction == "ArrowRight") return;
+            snakeDirection = {x:-1,y:0};
+            direction = "ArrowLeft";
+            break;
+        case 89:
+            //KeyY
+            if(gameOverDom.className.includes("none")){
+                return;
+            }
+            gameOverDom.classList.add('none');
+            gamePlayDom.classList.remove('none');
+            itinGame();
+            break;
+        case 78:
+            //KeyN
+            if(gameOverDom.className.includes("none")){
+                return;
+            }
+            gameOverDom.classList.add('none');
+            gameStartDom.classList.remove('none');
+            break;
+        default:
+            // 其他禁用
+            //e.returnValue = false;
+            break;
+    }
+    //延遲時間，防止同時按下兩個方向鍵
+    changeDirection = false;
+    setTimeout(() =>{
+        changeDirection = true;
+    }, 200);
+}
+
 
 // 遊戲開始
 function itinGame(){
     createSnakeMap();
-    gameOver = setInterval(()=>{
-        gameTimer++;
-    },1000);
-    speed(400);
+    score = 0;
+    speed(500);
     judgeScore();
 }
 
@@ -93,9 +176,15 @@ function snakeMove(){
         // 重新建立食物
         foodDom.remove();
         food(randomNumber(6, parseInt(columnNum) - 1), randomNumber(0, parseInt(rowNum) - 1));
+        
+        judgeGameScore(score);
     } else {
         // 咩有吃到
         snake.pop();
+    }
+    if(checkGameOver()){
+        judgeScore();
+        gameOverPage(score,localStorage.getItem('history'));
     }
 }
 
@@ -127,24 +216,14 @@ function updateGameBoard(){
         gameArea.querySelector(`.box[data-x="${snake[n].x}"][data-y="${snake[n].y}"]`).appendChild(snakeBody);
     }
 }
-
 // 遊戲結束
 function checkGameOver(){
     // 碰到身體鼠掉
     for(var i=1;i<snake.length;i++){
         if((snake[0].x === snake[i].x)&&(snake[0].y === snake[i].y)){
             console.log("die")
-            gameTimer =0;
-            judgeScore();
-            gameOverPage(score,localStorage.getItem('history'));
+            return true;
         }
-    }
-    // 60秒遊戲結束
-    if(gameTimer >=60){
-        console.log("gameover")
-        gameTimer =0;
-        judgeScore();
-        gameOverPage(score,localStorage.getItem('history'));
     }
 }  
 // 歷史成績
@@ -162,117 +241,33 @@ function judgeScore(){
 function speed(timer){
     gameInterval = setInterval(() => {
         snakeMove();
-        checkGameOver();
         updateGameBoard();
-      }, timer);
+    }, timer);
+}
+
+function judgeGameScore(score){
+    if(score % 5 === 0){
+        console.log(timer);
+        clearInterval(gameInterval);
+        timer -= 50;
+        if(timer<=150){
+            timer = 150;
+        }
+        speed(timer);
+    }
 }
 
 function gameOverPage(score,history){
-    clearInterval(gameInterval);
-    clearInterval(gameOver);
     gamePlayDom.classList.add('none');
     gameOverDom.classList.remove('none');
     document.getElementById("overScore").innerHTML = score;
     document.getElementById("bestScore").innerHTML = history;
-    score = 0;
     snake.length = 0;
+    score = 0;
     snake = [{x:8,y:6},{x:7,y:6},{x:7,y:5}]; 
     direction = "ArrowRight"; 
     snakeDirection = {x:1,y:0};
+    timer = 500;
+    clearInterval(gameInterval);
 }
 
-// 判斷鍵盤按鍵
-function judgeKey(e){
-    if(changeDirection !== true){
-        return
-    }
-    switch(e.keyCode){
-        case 32:
-            //  Space
-            if(gameStartDom.className.includes("none")){
-                return;
-            }
-            gameStartDom.classList.add('none');
-            gamePlayDom.classList.remove('none');
-            itinGame();
-            break;
-        case 40:
-            //  ArrowDown
-            if(gamePlayDom.className.includes("none")){
-                return;
-            }
-            if(direction == "ArrowUp"){
-                snakeDirection = {x:0,y:-1};
-                rection = "ArrowUp";
-                return;
-            }
-            snakeDirection = {x:0,y:1};
-            direction = "ArrowDown";
-            break;
-        case 38:
-            // ArrowUp
-            if(gamePlayDom.className.includes("none")){
-                return;
-            }
-            if(direction == "ArrowDown"){
-                snakeDirection = {x:0,y:1};
-                direction = "ArrowDown";
-                return;
-            }
-            snakeDirection = {x:0,y:-1};
-            direction = "ArrowUp";
-            break;
-        case 39:
-            // ArrowRight
-            if(gamePlayDom.className.includes("none")){
-                return;
-            }
-            if(direction == "ArrowLeft"){
-                snakeDirection = {x:-1,y:0};
-                direction = "ArrowLeft";
-                return;
-            }
-            snakeDirection = {x:1,y:0};
-            direction = "ArrowRight";
-            break;
-        case 37:
-            // ArrowLeft
-            if(gamePlayDom.className.includes("none")){
-                return;
-            }
-            if(direction == "ArrowRight"){
-                snakeDirection = {x:1,y:0};
-                direction = "ArrowRight";
-                return;
-            }
-            snakeDirection = {x:-1,y:0};
-            direction = "ArrowLeft";
-            break;
-        case 89:
-            //KeyY
-            if(gameOverDom.className.includes("none")){
-                return;
-            }
-            gameOverDom.classList.add('none');
-            gamePlayDom.classList.remove('none');
-            itinGame();
-            break;
-        case 78:
-            //KeyN
-            if(gameOverDom.className.includes("none")){
-                return;
-            }
-            gameOverDom.classList.add('none');
-            gameStartDom.classList.remove('none');
-            break;
-        default:
-            // 其他禁用
-            e.returnValue = false;
-            break;
-    }
-    //延遲時間，防止同時按下兩個方向鍵
-    changeDirection = false;
-    setTimeout(() =>{
-        changeDirection = true;
-    }, 100);
-}
