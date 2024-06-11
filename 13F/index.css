@@ -135,6 +135,7 @@ body .game-play .card .game-area .row .box {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 body .game-play .card .game-area .row .box .snake {
   width: 100%;
@@ -151,6 +152,9 @@ body .game-play .card .game-area .row .box .food {
   background-image: url(./img/ic-point.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+body .game-play .card .game-area .row .box.food-coordinate {
+  background-color: #ffffff;
 }
 body .game-over {
   width: 100%;

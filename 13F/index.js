@@ -21,7 +21,7 @@ let columnNum = 28;
 let gameInterval , gameOver ,gameTimer=0;
 let changeDirection = true;
 
-let timer =500;
+let timer =450;
 
 // 判斷鍵盤按鍵
 function judgeKey(e){
@@ -109,7 +109,7 @@ function judgeKey(e){
 function itinGame(){
     createSnakeMap();
     score = 0;
-    speed(500);
+    speed(timer);
     judgeScore();
 }
 
@@ -152,12 +152,46 @@ function food(randomCol,randomRow){
             foodPosition.x = randomCol;
             foodPosition.y = randomRow;
             box.appendChild(food);
+            createFoodBGC(randomCol,randomRow);
             return;
             
         }
     });
 }
-
+// 食物背景漸層
+function createFoodBGC(randomCol,randomRow){
+    //Y軸十字座標線
+    for(i = 1;i<5;i++){
+        if(document.querySelector(`.box[data-x="${randomCol-i}"][data-y="${randomRow}"]`)!=null ){
+            document.querySelector(`.box[data-x="${randomCol-i}"][data-y="${randomRow}"]`).classList.add('food-coordinate');
+            document.querySelector(`.box[data-x="${randomCol-i}"][data-y="${randomRow}"]`).style.backgroundColor = `rgba(255,255,255,${0.3 / i})`;
+        }
+        if(document.querySelector(`.box[data-x="${randomCol+i}"][data-y="${randomRow}"]`)!=null){
+            document.querySelector(`.box[data-x="${randomCol+i}"][data-y="${randomRow}"]`).classList.add('food-coordinate');
+            document.querySelector(`.box[data-x="${randomCol+i}"][data-y="${randomRow}"]`).style.backgroundColor = `rgba(255,255,255,${0.3 / i})`;
+        }
+    }
+    //X軸十字座標線
+    for(i = 1;i<4;i++){
+        if(document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow-i}"]`)!=null ){
+            document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow-i}"]`).classList.add('food-coordinate');
+            document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow-i}"]`).style.backgroundColor = `rgba(255,255,255,${0.3 / i})`;
+            
+            
+        }
+        if(document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow+i}"]`)!=null){
+            document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow+i}"]`).classList.add('food-coordinate');
+            document.querySelector(`.box[data-x="${randomCol}"][data-y="${randomRow+i}"]`).style.backgroundColor = `rgba(255,255,255,${0.3 / i})`;
+        }
+    }
+}
+// 清除食物
+function clearFoodBGC(){
+    document.querySelectorAll(".box").forEach(e=>{
+        e.classList.remove('food-coordinate');
+        e.style.backgroundColor = `transparent`;
+    })
+}
 // 隨機指定區間亂數
 function randomNumber(min,max){
     let number = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -174,6 +208,7 @@ function snakeMove(){
         score++;
         document.querySelector('.now > span').innerHTML = score;
         // 重新建立食物
+        clearFoodBGC();
         foodDom.remove();
         food(randomNumber(6, parseInt(columnNum) - 1), randomNumber(0, parseInt(rowNum) - 1));
         
@@ -250,8 +285,8 @@ function judgeGameScore(score){
         console.log(timer);
         clearInterval(gameInterval);
         timer -= 50;
-        if(timer<=150){
-            timer = 150;
+        if(timer<=100){
+            timer = 100;
         }
         speed(timer);
     }
@@ -267,7 +302,8 @@ function gameOverPage(score,history){
     snake = [{x:8,y:6},{x:7,y:6},{x:7,y:5}]; 
     direction = "ArrowRight"; 
     snakeDirection = {x:1,y:0};
-    timer = 500;
+    timer = 450;
     clearInterval(gameInterval);
+    clearFoodBGC();
 }
 
